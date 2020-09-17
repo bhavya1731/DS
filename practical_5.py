@@ -24,9 +24,9 @@ if a == 'b':
     list.sort()
     n= int(input("Enter the numbers for binary  search : "))
     if search(list, n):
-        print("Number Found  : ")
+        print("Number Found ")
     else:
-        print("Not Found : ")
+        print("Not Found ")
 elif a == 'l':
     #pos = -1
     def search(list ,n):
