@@ -7,12 +7,12 @@ class Stack():
 
     
     
-    def append(self,item):
+    def enque(self,item):
         self.items.append(item)
         print(item)
 
         
-    def pop(self):
+    def deque(self):
         b= self.items
         b.pop()
         print(b)
@@ -27,9 +27,9 @@ class Stack():
 s=Stack()
 
 print("Adding the element in the queue : ")
-s.append(6)
+s.enque(6)
 print("initial queue : ")
 s.traverse()
 
 print("After removing an element from the queue : ")
-s.pop()
+s.deque()
