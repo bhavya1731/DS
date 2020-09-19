@@ -33,36 +33,3 @@ s.traverse()
 
 print("After removing an element from the queue : ")
 s.pop()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
