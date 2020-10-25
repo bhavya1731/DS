@@ -1,19 +1,26 @@
 #NAME    : BHAVYA SHAH
 #ROLL_NO : 4072
 #CLASS   : SYCS 
-a = str(input("enter the string i for insertion sort , b for bubble sort , s for selection sort : "))
+
 nums = [5,4,4072,-1]
-if a=='i':
+a = str(input("enter the string i for insertion sort , b for bubble sort , s for selection sort : "))
+if a=='i' or a =='I':
    
-    for i  in range(1,len(nums)):
-        currentvalue = nums[i]
-        position = i
-        while(position>0 and nums[position-1] > currentvalue):
-            nums[position] = nums[position-1]
-            position = position-1
-    nums[position] = currentvalue
+    def insertion_sort(nums):
+        for i in range(1, len(nums)):
+            j = i-1
+            nxt_element = nums[i]
+
+		
+            while (nums[j] > nxt_element) and (j >= 0):
+                nums[j+1] = nums[j]
+                j=j-1
+            nums[j+1] = nxt_element
+
+
+    insertion_sort(nums)
     print(nums)
-elif a == 'b' :
+elif a == 'b' or a == 'B':
     
     def sort(nums):
         for i in range(len(nums)-1,0,-1):
@@ -24,7 +31,7 @@ elif a == 'b' :
                     nums[j+1] = temp 
     sort(nums)
     print(nums)
-elif a == 's':
+elif a == 's' or a =='S':
     def sort(nums):
         for i in range(len(nums)):
             minpos = i
