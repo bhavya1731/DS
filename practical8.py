@@ -1,3 +1,6 @@
+# Name  :Bhavya Shah
+# Rollno:4072
+# Class :SYCS
 import random
 
 random.seed(23)
