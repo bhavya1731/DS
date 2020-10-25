@@ -1,3 +1,6 @@
+# Name  :Bhavya Shah
+# Rollno:4072
+# Class :SYCS
 class Hash:
     def __init__(self, keys, lowerrange, higherrange):
         self.value = self.hashfunction(keys, lowerrange, higherrange)
